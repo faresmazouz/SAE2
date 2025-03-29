@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="solution.RulePage"
+             Title="RulePage">
+    <VerticalStackLayout Background="#3E3232">
+        <Label TextColor="White" HorizontalTextAlignment="Center" Text="Les règles de l'Hexapawn"></Label>
+        <Grid ColumnDefinitions="*,Auto">
+            <Label  Grid.Column="0" TextColor="White" Text="Hexapawn est un jeu de stratégie simple qui se joue sur un petit plateau de 3 cases par 3 (3x3)."></Label>
+            <ImageButton Margin="0,0,15 ,0" Grid.Column="1" Source="arrow.png" WidthRequest="50" Background="Transparent"></ImageButton>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
