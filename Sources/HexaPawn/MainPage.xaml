@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="solution.NewPage2"
+             x:Class="solution.MainPage"
              BackgroundColor="#3E3232">
 
     <Grid Padding="10">
@@ -33,12 +33,16 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            
-            <Label Text="♙" Grid.Row="0" Grid.Column="0" FontSize="40" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
-            <Label Text="♙" Grid.Row="0" Grid.Column="1" FontSize="40" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
-            <Label Text="♙" Grid.Row="0" Grid.Column="2" FontSize="40" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
 
+            <Label Text="♙" Grid.Row="0" Grid.Column="0" WidthRequest="200"  FontSize="40" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="♙" Grid.Row="0" Grid.Column="1" WidthRequest="200" FontSize="40" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="♙" Grid.Row="0" Grid.Column="2" WidthRequest="80" FontSize="40" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
             
+            <Label Text="" Grid.Row="1" Grid.Column="0" WidthRequest="200"  FontSize="40" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="" Grid.Row="1" Grid.Column="1" WidthRequest="200" FontSize="40" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="" Grid.Row="1" Grid.Column="2" WidthRequest="80" FontSize="40" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+
             <Label Text="♙" Grid.Row="2" Grid.Column="0" FontSize="40" TextColor="Orange" HorizontalOptions="Center" VerticalOptions="Center"/>
             <Label Text="♙" Grid.Row="2" Grid.Column="1" FontSize="40" TextColor="Orange" HorizontalOptions="Center" VerticalOptions="Center"/>
             <Label Text="♙" Grid.Row="2" Grid.Column="2" FontSize="40" TextColor="Orange" HorizontalOptions="Center" VerticalOptions="Center"/>
@@ -51,8 +55,14 @@
 
         
         <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
-            <Button Text="Scores" Style="{StaticResource MenuButtonStyle}" />
-            <Button Text="Replay" Style="{StaticResource MenuButtonStyle}" />
+            <Button Text="Scores"  
+                    Style="{StaticResource MenuButtonStyle}" 
+                    WidthRequest="200" />
+            
+            <Button Text="Replay" 
+                    Style="{StaticResource MenuButtonStyle}" 
+                    WidthRequest="200"/>
+                    
         </VerticalStackLayout>
 
        
@@ -63,12 +73,19 @@
                TextColor="White"
                HorizontalOptions="Center"
                VerticalOptions="Start"
-               Margin="0,10,0,0"/>
+               Margin="0,10,0,0"
+               />
 
        
         <HorizontalStackLayout Grid.Column="1" VerticalOptions="End" HorizontalOptions="Center" Spacing="20" Margin="0,0,0,20">
-            <Button Text="2 JOUEURS" Style="{StaticResource MenuButtonStyle}" WidthRequest="120"/>
-            <Button Text="VS BOT" Style="{StaticResource MenuButtonStyle}" WidthRequest="120"/>
+            <Button Text="2 JOUEURS" 
+                    Style="{StaticResource MenuButtonStyle}" 
+                    WidthRequest="200"/>
+            
+            <Button Text="VS BOT" 
+                    Style="{StaticResource MenuButtonStyle}" 
+                    WidthRequest="200"/>
+            
         </HorizontalStackLayout>
     </Grid>
 </ContentPage>
